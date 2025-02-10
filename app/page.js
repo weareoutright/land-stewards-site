@@ -1,10 +1,14 @@
 import Image from "next/image";
+import Hero from "./components/home/Hero";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div>
-      <main>this is main</main>
-      <footer>this is footer</footer>
+    <div className="Home">
+      <main>
+        <Hero />
+      </main>
+      <Footer />
     </div>
   );
 }

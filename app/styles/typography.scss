@@ -1,23 +1,77 @@
-// type
-$font-red-hat-text: var(--font-red-hat-text);
-$font-red-hat-mono: var(--font-red-hat-mono);
-$font-pp-eiko: var(--font-pp-eiko);
+@font-face {
+  font-family: "PP Eiko";
+  src: url("../fonts/PPEiko-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
 
 @font-face {
   font-family: "PP Eiko";
-  src: url("/fonts/PP-Eiko-Regular.woff2") format("woff2"),
-    url("/fonts/PP-Eiko-Regular.woff") format("woff");
+  src: url("../fonts/PPEiko-BlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PP Eiko";
+  src: url("../fonts/PPEiko-Heavy.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PP Eiko";
+  src: url("../fonts/PPEiko-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PP Eiko";
+  src: url("../fonts/PPEiko-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PP Eiko";
+  src: url("../fonts/PPEiko-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PP Eiko";
+  src: url("../fonts/PPEiko-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PP Eiko";
+  src: url("../fonts/PPEiko-Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PP Eiko";
-  src: url("/fonts/PP-Eiko-Bold.woff2") format("woff2"),
-    url("/fonts/PP-Eiko-Bold.woff") format("woff");
-  font-weight: bold;
+  src: url("../fonts/PPEiko-Thin.otf") format("opentype");
+  font-weight: 100;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "PP Eiko";
+  src: url("../fonts/PPEiko-ThinItalic.otf") format("opentype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+// type
+$font-red-hat-text: var(--font-red-hat-text);
+$font-red-hat-mono: var(--font-red-hat-mono);
+$font-pp-eiko: var(--font-pp-eiko);
 
 $font-size-4xl: 6rem;
 $font-size-3xl: 3.75rem;

@@ -1,23 +1,44 @@
 @import "./styles/variables.scss";
 @import "./styles/typography.scss";
 
+@import "./styles/home/Home";
+
+@import "./styles/Footer";
+
 :root {
   --font-red-hat-text: "Red Hat Text", sans-serif;
   --font-red-hat-mono: "Red Hat Mono", monospace;
   --font-pp-eiko: "PP Eiko", serif;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: $font-red-hat-text;
-  background: url("../app/assets/home-background.svg");
+  background: url("../app/assets/home/home-background.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .mono {
-  font-family: $font-red-hat-mono;
+  font-family: var(--font-red-hat-mono);
 }
 
 .pp-eiko {
+  font-family: var(--font-pp-eiko);
+}
+
+.header-1 {
   font-family: $font-pp-eiko;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  color: $lands-green;
 }
