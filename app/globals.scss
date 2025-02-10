@@ -1,0 +1,23 @@
+@import "./styles/variables.scss";
+@import "./styles/typography.scss";
+
+:root {
+  --font-red-hat-text: "Red Hat Text", sans-serif;
+  --font-red-hat-mono: "Red Hat Mono", monospace;
+  --font-pp-eiko: "PP Eiko", serif;
+}
+
+body {
+  font-family: $font-red-hat-text;
+  background: url("../app/assets/home-background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mono {
+  font-family: $font-red-hat-mono;
+}
+
+.pp-eiko {
+  font-family: $font-pp-eiko;
+}
