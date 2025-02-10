@@ -2,6 +2,7 @@ import { Red_Hat_Text, Red_Hat_Mono } from "next/font/google";
 import { GLOBALS } from "./global-site-info/globals";
 import "./globals.scss";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 const redHatText = Red_Hat_Text({
   subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
       <body>
         <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );
