@@ -7,23 +7,54 @@
     .video-container {
       position: relative;
       width: 100vw;
-      height: 70vh;
+      height: 80vh;
       overflow: hidden;
+      z-index: 0;
 
       .background-video {
         position: absolute;
         object-fit: cover;
-        top: 42%;
+        top: 50%;
         left: 50%;
         width: 100%;
         height: 200%;
         transform: translate(-50%, -50%);
+      }
+
+      .wave {
+        position: relative;
+        width: 100%;
+        height: 175%;
+        z-index: 1;
+        top: 60;
+        left: 0;
       }
     }
 
     .video-container video::-webkit-media-controls-panel {
       display: none !important;
       opacity: 1 !important;
+    }
+
+    .home-hero-content {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      position: relative;
+      margin-top: -10rem;
+      h1 {
+        z-index: 2;
+        width: 100%;
+        max-width: 70%;
+        min-width: 70%;
+      }
+      .hero-text {
+        position: absolute;
+        width: 35%;
+        right: 15%;
+        bottom: 18%;
+        z-index: 3;
+      }
     }
   }
 }
