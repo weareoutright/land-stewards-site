@@ -1,6 +1,7 @@
 import { Red_Hat_Text, Red_Hat_Mono } from "next/font/google";
 import { GLOBALS } from "./global-site-info/globals";
 import "./globals.scss";
+import Nav from "./components/Nav";
 
 const redHatText = Red_Hat_Text({
   subsets: ["latin"],
@@ -19,7 +20,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${redHatText.variable} ${redHatMono.variable}`}>
-      <body>{children}</body>
+      <body>
+        <Nav />
+        {children}
+      </body>
     </html>
   );
 }

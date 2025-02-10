@@ -1,0 +1,29 @@
+.Nav {
+  height: 96px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(7.5px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .nav-logo {
+    display: block;
+    padding: 0 125px;
+  }
+
+  .menu-btn {
+    color: white;
+    text-decoration: none;
+    font-family: $font-red-hat-mono;
+    padding: 0 125px;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+  }
+}
