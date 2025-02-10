@@ -12,7 +12,7 @@ const Footer = () => {
       <Image src={FOOTER_FLOWER_BLACK} alt="" className="footer-bg" />
       <div className="content footer-content">
         <div className="org-info">
-          <div classname="non-profit-social-links">
+          <div className="non-profit-social-links">
             <p>
               <strong>Land Stewards</strong> is a 501(c)(3) nonprofit
               organization dedicated to land stewardship that incorporates
