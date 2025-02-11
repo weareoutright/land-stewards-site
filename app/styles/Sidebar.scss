@@ -1,0 +1,130 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%; // Initially hidden
+  width: 320px;
+  height: 100vh;
+  background-color: #153251; // Adjust color as needed
+  color: white;
+  padding: 0px 120px 0 20px;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3);
+  transition: right 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 1000;
+
+  &.open {
+    right: 0; // Moves into view
+  }
+
+  .sidebar-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1rem;
+    gap: 0.75rem;
+  }
+
+  .close-text {
+    text-transform: uppercase;
+    font-family: $font-red-hat-mono;
+  }
+
+  .close-button {
+    background: transparent;
+    border: none;
+    color: #3fc1c9;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .sidebar-nav {
+    text-align: right;
+    width: 327px;
+
+    .parent-link,
+    .no-children {
+      font-weight: 500;
+      font-size: 24px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        padding: 0.25rem 0;
+        font-size: 16px;
+        cursor: pointer;
+
+        &:hover {
+          color: #3fc1c9; // Hover effect
+        }
+
+        strong {
+          display: block;
+          font-size: 18px;
+          margin-top: 15px;
+        }
+      }
+    }
+
+    small,
+    .no-children {
+      font-size: 1rem;
+      font-family: $font-red-hat-mono;
+      margin-bottom: 1rem;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      transition: $cubic-bezier;
+
+      &:hover {
+        color: $hyperlinkteal;
+      }
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 0;
+
+      li {
+        margin-bottom: 1rem;
+
+        ul {
+          padding: 0;
+          li {
+            margin: 0.5rem 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Menu button (place this in the navbar)
+.menu-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+// Overlay (closes sidebar when clicked)
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
