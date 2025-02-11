@@ -107,6 +107,20 @@ body {
   }
 }
 
+.disabled-btn {
+  display: inline-flex;
+  height: 25px;
+  padding: 0px 14px;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 27px;
+  background: $gray;
+  color: $darkgray;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
 .eyebrow-mono {
   font-family: $font-red-hat-mono;
   font-size: 16px;
