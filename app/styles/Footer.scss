@@ -69,6 +69,11 @@
       a {
         color: white;
         text-decoration: none;
+        transition: $cubic-bezier;
+
+        &:hover {
+          color: $hyperlinkteal;
+        }
       }
 
       ul {

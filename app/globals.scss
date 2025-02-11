@@ -4,6 +4,7 @@
 @import "./styles/Nav";
 @import "./styles/home/Home";
 @import "./styles/CardSideBySide.scss";
+@import "./styles/Carousel.scss";
 @import "./styles/home/CTABannerHome.scss";
 @import "./styles/Footer";
 
@@ -50,11 +51,19 @@ body {
 }
 
 .header-2 {
-  font-family: "PP Eiko";
+  font-family: $font-pp-eiko;
   font-size: 60px;
   font-style: normal;
   font-weight: 400;
   line-height: 90px;
+}
+
+.header-3 {
+  font-family: $font-red-hat-text;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .primary-btn {
@@ -68,7 +77,7 @@ body {
   flex-shrink: 0;
   font-weight: 600;
   margin-top: 1rem;
-  transition: all 220ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: $cubic-bezier;
   &:hover {
     border-radius: 27px;
     background: #1d8985;
@@ -85,7 +94,7 @@ body {
   flex-shrink: 0;
   border-radius: 27px;
   border: 1px solid $robinegg;
-  transition: all 220ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: $cubic-bezier;
   color: white;
   text-decoration: none;
   font-weight: 600;

@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 8rem 0 2rem 0;
+  padding: 9rem 0 2rem 0;
   position: relative;
 
   .cta-bg {
@@ -14,7 +14,7 @@
     background: url("../../assets/home/footer-cta-bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    scale: 1.2;
+    scale: 1.25;
     top: 0;
     clip-path: path("M-50,350 Q1200,-200 1540,500 L1440,1216 L0,1216 Z");
   }

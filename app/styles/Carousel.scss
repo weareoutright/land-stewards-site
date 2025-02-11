@@ -1,0 +1,80 @@
+.Carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 4rem 0;
+  margin-top: -2rem;
+
+  .CarouselContainer {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    scrollbar-width: none; // Hide scrollbar for a clean look
+  }
+
+  .carousel-item {
+    flex: 0 0 auto;
+    width: 30%;
+    scroll-snap-align: start;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    transition: $cubic-bezier;
+    &:hover {
+      .arrow-and-link {
+        color: $hyperlinkteal;
+      }
+    }
+  }
+
+  .arrow-and-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    transition: $cubic-bezier;
+    &:hover {
+      color: $hyperlinkteal;
+    }
+  }
+
+  .carousel-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  .carousel-title {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fff;
+  }
+
+  .carousel-controls {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 1rem;
+
+    .arrow {
+      background: transparent;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: white;
+      opacity: 0.8;
+
+      &:disabled {
+        opacity: 0.3;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

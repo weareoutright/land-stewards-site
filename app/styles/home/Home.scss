@@ -60,5 +60,39 @@
 
   .HomeContent {
     margin-top: -4rem;
+
+    .explore-our-work {
+      color: white;
+      padding: 0 125px;
+
+      .header {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .title-and-controls {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .carousel-controls {
+          display: flex;
+          gap: 1rem;
+        }
+      }
+
+      h3 {
+        margin-bottom: 1.25rem;
+      }
+
+      small {
+        font-family: $font-red-hat-text;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 23.2px; /* 145% */
+      }
+    }
   }
 }
