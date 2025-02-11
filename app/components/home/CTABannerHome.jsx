@@ -1,7 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import Image from "next/image";
-import CTA_HOME_BG from "../assets/home/footer-cta-bg.svg";
 
 const WAYPOINTS = [
   {

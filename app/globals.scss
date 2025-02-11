@@ -3,7 +3,8 @@
 
 @import "./styles/Nav";
 @import "./styles/home/Home";
-@import "./styles/CTABannerHome.scss";
+@import "./styles/CardSideBySide.scss";
+@import "./styles/home/CTABannerHome.scss";
 @import "./styles/Footer";
 
 :root {
@@ -48,6 +49,14 @@ body {
   color: $lands-green;
 }
 
+.header-2 {
+  font-family: "PP Eiko";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90px;
+}
+
 .primary-btn {
   border-radius: 27px;
   background: $robinegg;
@@ -57,9 +66,33 @@ body {
   align-items: center;
   gap: 10px;
   flex-shrink: 0;
+  font-weight: 600;
+  margin-top: 1rem;
   transition: all 220ms cubic-bezier(0.25, 0.1, 0.25, 1);
   &:hover {
     border-radius: 27px;
     background: #1d8985;
+  }
+}
+
+.secondary-btn {
+  display: inline-flex;
+  height: 25px;
+  padding: 0px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 27px;
+  border: 1px solid $robinegg;
+  transition: all 220ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 1rem;
+  &:hover {
+    border: 1px solid $robinegg;
+    background: #c8eceb;
+    color: $night;
   }
 }
