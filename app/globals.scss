@@ -3,7 +3,7 @@
 
 @import "./styles/Nav";
 @import "./styles/home/Home";
-
+@import "./styles/CTABannerHome.scss";
 @import "./styles/Footer";
 
 :root {
@@ -46,4 +46,20 @@ body {
   font-style: normal;
   font-weight: 400;
   color: $lands-green;
+}
+
+.primary-btn {
+  border-radius: 27px;
+  background: $robinegg;
+  display: inline-flex;
+  height: 30px;
+  padding: 0 0.95rem;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  transition: all 220ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  &:hover {
+    border-radius: 27px;
+    background: #1d8985;
+  }
 }
