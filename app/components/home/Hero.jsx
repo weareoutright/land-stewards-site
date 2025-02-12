@@ -11,7 +11,7 @@ const Hero = () => {
           src="https://player.vimeo.com/video/1055359690?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;controls=0&amp;loop=1&amp;background=1&amp;responsive=1&amp;frameborder=0&amp;muted=1"
           title="home-header-video"
           className="background-video"
-          allow="autoplay"
+          allow="autoplay loop"
         ></Iframe>
         <Image src={WAVE} alt="wave" className="wave" />
       </div>

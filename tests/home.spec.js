@@ -43,4 +43,32 @@ test.describe("Homepage Tests", () => {
     // ✅ Ensure the sidebar is back off-screen using the actual computed value
     await expect(sidebar).toHaveCSS("right", computedRight);
   });
+
+  test("Check if Vimeo video autoplays and loops on the home page", async ({
+    page,
+  }) => {
+    // Navigate to the home page
+    await page.goto("http://localhost:3000"); // Adjust URL if needed
+
+    // ✅ Locate the iframe element (not the frame itself)
+    const iframe = page.locator(".background-video"); // Adjust selector if needed
+
+    // ✅ Ensure the iframe is present and visible
+    await expect(iframe).toBeVisible();
+
+    // ✅ Access the Vimeo iframe's content
+    const vimeoFrame = page.frameLocator(".background-video"); // Use frameLocator() to access the iframe context
+
+    // ✅ Check that the iframe `src` contains autoplay and loop parameters
+    const iframeSrc = await iframe.getAttribute("src");
+    expect(iframeSrc).toContain("autoplay=1");
+    expect(iframeSrc).toContain("loop=1");
+
+    // ✅ Ensure the Vimeo video is actually playing
+    const isPlaying = await vimeoFrame.locator("video").evaluate((video) => {
+      return !video.paused && !video.onended;
+    });
+
+    expect(isPlaying).toBeTruthy(); // Test passes if the video is playing
+  });
 });
