@@ -3,10 +3,13 @@
 
 .Footer {
   height: 25rem;
-  width: 100%;
+  width: 100vw;
+  margin: 0 auto;
+
   background: rgba(30, 30, 30, 0.7);
   backdrop-filter: blur(25px);
   position: relative;
+  bottom: 0;
   color: white;
   padding: 4rem 0;
 
@@ -20,6 +23,8 @@
   .footer-content {
     display: flex;
     flex-direction: row;
+    max-width: 1250px;
+    margin: 0 auto;
 
     .org-info {
       width: 40%;
