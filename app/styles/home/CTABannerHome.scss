@@ -1,3 +1,6 @@
+@use "../typography";
+@use "../variables";
+
 .CTABannerHome {
   color: white;
   display: flex;
@@ -20,7 +23,7 @@
   }
 
   small {
-    font-family: $font-red-hat-text;
+    font-family: typography.$font-red-hat-text;
     text-transform: uppercase;
     font-weight: 600;
     line-height: 23.2px; /* 145% */
@@ -28,7 +31,7 @@
   }
 
   h2 {
-    font-family: $font-pp-eiko;
+    font-family: typography.$font-pp-eiko;
     font-size: 96px;
     font-style: normal;
     font-weight: 400;
@@ -49,7 +52,7 @@
 
       .waypoint-btn {
         text-decoration: none;
-        color: $night;
+        color: variables.$night;
         font-weight: 600;
       }
     }

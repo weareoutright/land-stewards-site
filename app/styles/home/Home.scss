@@ -1,3 +1,5 @@
+@use "../typography";
+
 .Home {
   width: 100vw;
   .Hero {
@@ -87,7 +89,7 @@
       }
 
       small {
-        font-family: $font-red-hat-text;
+        font-family: typography.$font-red-hat-text;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;

@@ -1,3 +1,6 @@
+@use "typography";
+@use "variables";
+
 .Footer {
   height: 25rem;
   width: 100%;
@@ -62,17 +65,17 @@
       small,
       .no-children {
         font-size: 1rem;
-        font-family: $font-red-hat-mono;
+        font-family: typography.$font-red-hat-mono;
         margin-bottom: 2rem;
       }
 
       a {
         color: white;
         text-decoration: none;
-        transition: $cubic-bezier;
+        transition: variables.$cubic-bezier;
 
         &:hover {
-          color: $hyperlinkteal;
+          color: variables.$hyperlinkteal;
         }
       }
 

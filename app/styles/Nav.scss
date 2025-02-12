@@ -1,3 +1,5 @@
+@use "typography";
+
 .Nav {
   height: 6rem;
   position: fixed;
@@ -19,7 +21,7 @@
   .menu-btn {
     color: white;
     text-decoration: none;
-    font-family: $font-red-hat-mono;
+    font-family: typography.$font-red-hat-mono;
     padding: 0 125px;
     display: flex;
     flex-direction: row;

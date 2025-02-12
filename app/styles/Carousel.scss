@@ -1,3 +1,5 @@
+@use "variables";
+
 .Carousel {
   position: relative;
   width: 100%;
@@ -24,10 +26,10 @@
     overflow: hidden;
     text-align: center;
     text-decoration: none;
-    transition: $cubic-bezier;
+    transition: variables.$cubic-bezier;
     &:hover {
       .arrow-and-link {
-        color: $hyperlinkteal;
+        color: variables.$hyperlinkteal;
       }
     }
   }
@@ -38,9 +40,9 @@
     align-items: center;
     gap: 0.5rem;
     color: white;
-    transition: $cubic-bezier;
+    transition: variables.$cubic-bezier;
     &:hover {
-      color: $hyperlinkteal;
+      color: variables.$hyperlinkteal;
     }
   }
 
