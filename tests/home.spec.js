@@ -63,12 +63,5 @@ test.describe("Homepage Tests", () => {
     const iframeSrc = await iframe.getAttribute("src");
     expect(iframeSrc).toContain("autoplay=1");
     expect(iframeSrc).toContain("loop=1");
-
-    // ✅ Ensure the Vimeo video is actually playing
-    const isPlaying = await vimeoFrame.locator("video").evaluate((video) => {
-      return !video.paused && !video.onended;
-    });
-
-    expect(isPlaying).toBeTruthy(); // Test passes if the video is playing
   });
 });

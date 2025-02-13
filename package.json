@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "test": "npx playwright test",
+    "test:clear-cache": "npx playwright test --clear-cache",
     "test-headed": "npx playwright test --headed",
     "test-ui": "npx playwright test --ui",
     "test-optimzed-build": "npm run build npm run start & npx playwright test",
@@ -22,6 +23,7 @@
     "sass": "^1.84.0"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.10.1",
     "@eslint/eslintrc": "^3",
     "@playwright/test": "^1.50.1",
     "concurrently": "^9.1.2",
