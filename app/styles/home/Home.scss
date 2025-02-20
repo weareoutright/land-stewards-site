@@ -13,6 +13,9 @@
       height: 80vh;
       overflow: hidden;
       z-index: 0;
+      background-image: url("../../assets/home/lsf-homepage-thumbnail.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
 
       .background-video {
         position: absolute;
