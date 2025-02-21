@@ -14,7 +14,11 @@ const HomeContent = () => {
         imageAltText="Bio Rewild thumbnail"
         imageLeftBool={true}
         borderBottomBool={true}
-        header="Biodiversity & Rewilding"
+        header={
+          <>
+            Biodiversity <br></br>& Rewilding
+          </>
+        }
         textContent="We take an active, energetic approach to restoring and maintaining biodiversity and healthy ecosystems through practices that include rewilding and managed grazing. We also promote and prove out regenerative agricultural techniques based on new science and ancient practices to grow healthy food and contribute to biodiversity and a healthier world."
         btnText="View Projects & Focus Areas"
         btnHref="/biodiversity-and-rewilding"
