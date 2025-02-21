@@ -2,6 +2,8 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+const ROBINS_EGG_HEX = "#2dc2bd";
+
 const CardSideBySide = ({
   image,
   imageAltText,
@@ -19,8 +21,8 @@ const CardSideBySide = ({
         className="content side-by-side-content"
         style={{
           flexDirection: imageLeftBool ? "" : "row-reverse",
-          borderBottom: borderBottomBool ? "1px solid white" : "",
-          borderTop: !borderBottomBool ? "1px solid white" : "",
+          borderBottom: borderBottomBool ? `1px solid ${ROBINS_EGG_HEX}` : "",
+          borderTop: !borderBottomBool ? `1px solid ${ROBINS_EGG_HEX}` : "",
         }}
       >
         <Image src={image} alt={imageAltText} />
