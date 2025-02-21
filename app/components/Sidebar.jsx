@@ -22,12 +22,11 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
 
         <nav className="sidebar-nav">
           <ul>
-            {/* Current Research */}
             <li>
               <Link href={CURRENT_RESEARCH_URL} className="parent-link">
                 <small>CURRENT RESEARCH</small>
               </Link>
-              <ul>
+              <ul className="children">
                 <li>
                   <Link href={`${CURRENT_RESEARCH_URL}/hemlock-restoration`}>
                     Hemlock Restoration
@@ -46,16 +45,19 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
               </ul>
             </li>
 
-            {/* Biodiversity & Rewilding */}
             <li>
               <Link href={BIODIVERSITY_REWILDING_URL} className="parent-link">
-                <small>BIODIVERSITY & REWILDING</small>
+                <small>
+                  BIODIVERSITY<br></br>& REWILDING
+                </small>
               </Link>
-              <ul>
+              <ul className="children">
                 <li>
                   <Link
                     href={`${BIODIVERSITY_REWILDING_URL}/Regenerative Agriculture`}
-                  ></Link>
+                  >
+                    Regenerative Agriculture
+                  </Link>
                 </li>
                 <li>
                   <Link
@@ -90,7 +92,7 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
               <Link href={ABOUT_URL} className="parent-link">
                 <small>ABOUT US</small>
               </Link>
-              <ul>
+              <ul className="children">
                 <li>
                   <Link href={`${ABOUT_URL}/who-we-are`}>Who We Are</Link>
                 </li>
