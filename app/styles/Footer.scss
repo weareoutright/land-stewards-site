@@ -2,9 +2,10 @@
 @use "variables";
 
 .Footer {
-  height: 25rem;
+  height: 23rem;
   width: 100vw;
   margin: 0 auto;
+  margin-top: 2.5rem;
   background: rgba(30, 30, 30, 0.7);
   backdrop-filter: blur(25px);
   position: relative;
