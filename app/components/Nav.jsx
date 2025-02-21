@@ -24,6 +24,12 @@ const Nav = () => {
         MENU
         <Image src={MENU_ICON} className="menu-btn-icon" />
       </a>
+      {isOpen && (
+        <div
+          className="sidebar-overlay"
+          onClick={(e) => toggleSidebar(e)}
+        ></div>
+      )}
       <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
     </nav>
   );

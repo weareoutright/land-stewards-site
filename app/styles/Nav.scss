@@ -22,10 +22,16 @@
     color: white;
     text-decoration: none;
     font-family: typography.$font-red-hat-mono;
-    padding: 0 125px;
+    padding: 10px 125px 10px 25px;
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
     align-items: center;
+  }
+
+  .sidebar-overlay {
+    width: 100%;
+    height: 200vh;
+    position: absolute;
   }
 }
