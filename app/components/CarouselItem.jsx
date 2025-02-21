@@ -6,11 +6,13 @@ import Link from "next/link";
 const CarouselItem = ({ thumbnail, thumbnailAltText, linkText, href }) => {
   return (
     <Link className="carousel-item" href={href}>
-      <Image
-        src={thumbnail}
-        alt={thumbnailAltText}
-        className="carousel-image"
-      />
+      <div className="carousel-image-container">
+        <Image
+          src={thumbnail}
+          alt={thumbnailAltText}
+          className="carousel-image"
+        />
+      </div>
       <div className="arrow-and-link">
         <Image src={TINY_ARROW} alt="right-arrow" />
         <p>{linkText}</p>
